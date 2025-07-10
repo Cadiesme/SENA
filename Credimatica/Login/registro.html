@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos del documento -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro - Credimática</title>
+
+  <!-- Enlace al archivo de estilos externo -->
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <!-- Encabezado con el nombre de la empresa -->
+  <div class="header">Credimática</div>
+
+  <!-- Contenedor del formulario de registro -->
+  <div class="login-container">
+    <h2>Registro</h2>
+
+    <!-- Formulario para crear una nueva cuenta -->
+    <form>
+      <!-- Campo para el nombre completo -->
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <!-- Campo para el correo electrónico -->
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" required />
+
+      <!-- Campo para el nombre de usuario -->
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario" required />
+
+      <!-- Campo para la contraseña -->
+      <label for="contrasena">Contraseña</label>
+      <input type="password" id="contrasena" name="contrasena" required />
+
+      <!-- Botón para enviar el formulario -->
+      <button type="submit">Registrarse</button>
+    </form>
+
+    <!-- Enlace para volver al login -->
+    <p class="enlace-registro">
+      ¿Ya tienes cuenta? <a href="index.html">Inicia sesión</a>
+    </p>
+  </div>
+
+</body>
+</html>
