@@ -1,0 +1,62 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+  background-color: #f0f8ff; /* Azul muy claro */
+}
+
+/* Estilo para los inputs y el botón */
+input, button {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 300px;
+}
+
+/* Estilo del botón */
+button {
+  background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Cambio de color al pasar el mouse sobre el botón */
+button:hover {
+    background-color: #218838;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+/* Estilos para las celdas */
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: right;
+}
+
+/* Encabezado de la tabla */
+th {
+    background-color: #e0e0e0;
+}
+
+/* Estilo del bloque de totales */
+#totales {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+/* Estilo para el menú desplegable */
+#tipoMovimiento {
+    width: 200px;
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;       /* Centra las opciones desplegadas */
+    text-align-last: center;  /* Centra la opción seleccionada */
+
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Inversiones e Intereses</title>
+    <link rel="stylesheet" href="CSS/inversion.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <!-- Encabezado con el nombre de la empresa -->
+    <div class="header">Credimática</div>
+
+    <h1>Registro de Movimientos</h1>
+
+    <!-- Campo para ingresar el valor del movimiento -->
+    <label>Valor:</label><br>
+    <input type="number" id="valorMovimiento" placeholder="Ej: 100000"><br>
+
+    <!-- Selección del tipo de movimiento: inversión o interés -->
+    <label>Tipo de movimiento:</label><br>
+    <select id="tipoMovimiento">
+        <option value="Inversión">Inversión</option>
+        <option value="Interés">Interés</option>
+    </select><br>
+
+    <!-- Botón para registrar el movimiento -->
+    <button onclick="agregarMovimiento()">Registrar Movimiento</button>
+
+    <!-- Tabla de historial -->
+    <h2>Historial</h2>
+    <table id="tablaMovimientos">
+    <thead>
+    <tr>
+        <th>Fecha</th>
+        <th>Tipo</th>
+        <th>Valor</th>
+        <th>Acción</th>
+    </tr>
+    </thead>
+    <tbody></tbody> <!-- ESTE ELEMENTO ES CLAVE -->
+</table>
+
+
+    <!-- Totales acumulados -->
+    <div id="totales">
+    <p><strong>Total Invertido:</strong> $<span id="totalInversion">0.00</span></p>
+    <p><strong>Total Intereses:</strong> $<span id="totalInteres">0.00</span></p>
+    <p><strong>Total cuenta:</strong> $<span id="totalCuenta">0.00</span></p>
+
+    </div>
+
+    <script src="js/inversion.js"></script>
+
+</body>
+</html>
+
+

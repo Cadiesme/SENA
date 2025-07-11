@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Amortización</title>
+    <link rel="stylesheet" href="CSS/amortizacion.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado superior con el nombre de la empresa -->
+    <div class="header">Credimática</div>
+
+
+    <h1>Calculadora de Amortización Compra</h1>
+
+    <label>Valor de la compra:</label><br>
+    <input type="number" id="monto" placeholder="Ej: 1000000"><br>
+
+    <label>Número de cuotas:</label><br>
+    <input type="number" id="cuotas" placeholder="Ej: 12"><br>
+
+    <label>Tasa de interés mensual (%):</label><br>
+    <input type="number" id="interes" placeholder="Ej: 2"><br>
+
+    <label>Observación de la compra:</label><br>
+<textarea id="observacion" rows="3" placeholder="Ej: Compra de equipo de oficina" style="width: 100%; max-width: 600px;"></textarea><br>
+
+    <button onclick="calcularAmortizacion()">Calcular</button>
+
+    <div id="resultado"></div>
+
+    <script src="js/amortizacion.js"></script>
+
+</body>
+</html>
+
